@@ -9,13 +9,18 @@
     <h1>Formulario</h1>
     <form action="" method="post" autocomplete="on">
         <p>
-            <label for="usu">Usuário</label>
-            <input type="text" name="usu" required id="iusu" autocomplete="username">
+            <label for="usu">Nome</label>
+            <input type="text" name="usu" required id="iusu" autocomplete="username" aria-required="">
         </p>
         <p>
-          <label for="senha">Senha</label>
-          <input type="password" name="senha" id="isenha" required minlength="6" maxlength="10" placeholder="min 6 caracteres" autocomplete="current-password">
-          <p>
+            <label for="media">Média</label>
+            <input type="number" name="media" id="imedia" step="0.1" required min="5" max="10">
+        </p>
+        <p>
+            <label for="mes">Mês</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+       
           <input type="submit" value="Enviar" >
           <input type="reset" value="Limpar dados">
         </p>
